@@ -110,20 +110,25 @@ view: suth_reuse {
   #   sql: ${TABLE}.v1 ;;
   # }
 
-
+  measure: avg_value{
+    label: "Avg Reading"
+    type: average
+    sql: ${v1} ;;
+    value_format: "0.00"
+  }
 
   measure: min_value{
-    label: "Min Meter Reading"
+    label: "Min Reading"
     type: min
     sql: ${v1} ;;
-    value_format: "0.000"
+    value_format: "0.00"
   }
 
   measure: max_value{
-    label: "Max Meter Reading"
+    label: "Max Reading"
     type: max
     sql: ${v1} ;;
-    value_format: "0.000"
+    value_format: "0.00"
   }
 
   measure: length_of_time {
