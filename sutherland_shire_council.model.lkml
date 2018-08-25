@@ -9,3 +9,7 @@ datagroup: sutherland_shire_council_default_datagroup {
 }
 
 persist_with: sutherland_shire_council_default_datagroup
+
+explore:suth_reuse {
+  label: "Sutherland Reuse"
+}
